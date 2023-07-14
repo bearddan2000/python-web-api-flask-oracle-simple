@@ -16,7 +16,6 @@ services:
       test: "exit 0"
     command: sh -c "/wait && python app.py"
     environment:
-      - NEO4J_AUTH=neo4j/secret
       - WAIT_HOSTS=db:1521
       - WAIT_HOSTS_TIMEOUT=300
       - WAIT_SLEEP_INTERVAL=30
